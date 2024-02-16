@@ -1,0 +1,16 @@
+.vm-btn{
+    background-color: var(--clr-green-2);
+    padding: 8px 24px;
+    border-radius: 50px;
+    color: var(--clr-white);
+    border: 1px solid var(--clr-green-2);
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    &:hover{
+        color: var(--clr-green-2);
+        background-color: var(--clr-white);
+        transition: 0.3s;
+    }
+}
