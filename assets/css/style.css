@@ -565,7 +565,6 @@ button {
   height: 100vh;
 }
 .vm-header .navbar-collapse.collapse:not(.show) {
-  display: block;
   transition: 0.5s;
   max-height: 0;
   overflow: hidden;
@@ -588,12 +587,23 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .vm-header__cart svg path {
   fill: var(--clr-green-2);
 }
 .vm-header__cart svg circle {
   fill: var(--clr-white);
+}
+.vm-header__cart::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  top: -3px;
+  right: 0;
+  background-color: var(--clr-red);
 }
 .vm-header .navbar-toggler {
   outline: 0;
@@ -724,11 +734,7 @@ button {
     max-height: unset !important;
     background-position: left;
   }
-  .vm-header .navbar-collapse.show .vm-header__menu {
-    display: block;
-  }
   .vm-header__menu {
-    display: none;
     flex-direction: column;
     padding: 40px 0;
     height: unset;
@@ -1426,10 +1432,11 @@ button {
   }
   .vm-footer__block--two .vm-footer__block-content {
     flex-direction: column;
+    align-items: center;
   }
   .vm-footer__address {
     margin-top: 16px;
-    text-align: left;
+    text-align: center;
   }
   .vm-footer__block--three .vm-footer__block-content {
     flex-direction: column;
