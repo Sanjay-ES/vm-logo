@@ -222,8 +222,14 @@
             left: 50%;
             transform: translateX(-50%);
             justify-content: center;
+            li{
+                width: 15px;
+                height: 15px;
+            }
             li button{
                 &::before{
+                    width: 10px;
+                    height: 10px;
                     transform: translate(-50%, -50%);
                 }
             }
