@@ -8,11 +8,14 @@
 @import "./base/dev";
 
 // atoms
-@import "./atoms/button";
+@import "./atoms/button";      
+@import "./atoms/heading";      
 
 // molecule
 @import "./molecules/_modal";
 
 // organisms
-@import "./organisms/header"
+@import "./organisms/header";
+@import "./organisms/herosec";
+@import "./organisms/great-taste";
 // pages

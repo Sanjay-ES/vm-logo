@@ -4,7 +4,7 @@
     border-radius: 50px;
     color: var(--clr-white);
     border: 1px solid var(--clr-green-2);
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     transition: 0.3s;
@@ -15,5 +15,14 @@
         color: var(--clr-green-2);
         background-color: var(--clr-white);
         transition: 0.3s;
+    }
+    &--inv{
+        color: var(--clr-green-2);
+        border: 1px solid var(--clr-white);
+        background-color: var(--clr-white);
+        &:hover{
+            color: var(--clr-white);
+            background-color: var(--clr-green-2);
+        }
     }
 }

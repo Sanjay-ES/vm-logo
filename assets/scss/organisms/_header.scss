@@ -7,6 +7,9 @@
         color: var(--clr-green);
         font-size: 30px;
         font-weight: 700;
+        &:hover{
+            color: var(--clr-green);
+        }
     }
     .navbar-collapse{
         position: absolute;
@@ -44,9 +47,10 @@
         height: 40px;
         border-radius: 50%;
         border: 2px solid var(--clr-green-2);
-        padding: 4px;
+        padding: 10px;
         display: flex;
         align-items: center;
+        justify-content: center;
         svg{
             path{
                 fill: var(--clr-green-2);
