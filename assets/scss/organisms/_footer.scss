@@ -156,11 +156,13 @@
         &__block--two{
             .vm-footer__block-content{
                 flex-direction: column;
+                align-items: center;
             }
         }
         &__address{
             margin-top: 16px;
-            text-align: left;
+            text-align: center;
+            // text-align: left;
         }
 
         &__block--three{

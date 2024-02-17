@@ -31,7 +31,7 @@
             height: 100vh;
         }
         &.collapse:not(.show){
-            display: block;
+            // display: block;
             transition: 0.5s;
             max-height: 0;
             overflow: hidden;
@@ -55,6 +55,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        position: relative;
         svg{
             path{
                 fill: var(--clr-green-2);
@@ -63,6 +64,16 @@
                 fill: var(--clr-white);
 
             }
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            top: -3px;
+            right: 0;
+            background-color: var(--clr-red);
         }
     }
     .navbar-toggler{
@@ -202,11 +213,11 @@
             max-height: unset !important;
             background-position: left;
             .vm-header__menu{
-                display: block;
+                // display: block;
             }
         }
         &__menu{
-            display: none;
+            // display: none;
             flex-direction: column;
             padding: 40px 0;
             height: unset;
