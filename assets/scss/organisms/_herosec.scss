@@ -3,6 +3,7 @@
     overflow: hidden;
     position: relative;
     &__outer{
+        margin-bottom: 0 !important;
     }
     &__itemout{
         position: relative;
@@ -52,10 +53,10 @@
     &__itemright{
         overflow: hidden;
         z-index: 5;
-        width: 50%;
+        width: 45%;
         position: absolute;
         right: -15%;
-        top: 0;
+        top: 15%;
         height: 100%;
     }
     &__rightimg{
@@ -144,7 +145,7 @@
                     border-radius: 50%;
                     left: 50%;
                     top: 50%;
-                    transform: translate(-55%, -45%);
+                    transform: translate(-50%, -45%);
                 }
             }
             &.slick-active{
@@ -165,7 +166,7 @@
         &__outer{
         }
         &__item{
-            padding: 40px 0;
+            padding: 100px 0;
             height: 100%;
             // height: auto ;
         }
@@ -174,7 +175,7 @@
             transform: translateY(-24px);
         }
         .slick-dots{
-            bottom: 20%;
+            bottom: 24%;
             left: 6%;
             li button{
                 &::before{
@@ -202,7 +203,7 @@
         &__outer{
         }
         &__item{
-            padding: 40px 0;
+            padding: 100px 0;
             height: auto;
             flex-direction: column-reverse;
             // height: auto ;
@@ -217,7 +218,7 @@
             position: static;
         }
         .slick-dots{
-            bottom: 12%;
+            bottom: 16%;
             left: 50%;
             transform: translateX(-50%);
             justify-content: center;
