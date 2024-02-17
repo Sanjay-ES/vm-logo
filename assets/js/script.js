@@ -25,6 +25,8 @@ $('.vm-banner__outer').slick({
   dots: true,
   infinite: false,
   speed: 1300,
+  autoplay: true,
+  autoplaySpeed: 5000,
   slidesToShow: 1,
   slidesToScroll: 1,
   responsive: [

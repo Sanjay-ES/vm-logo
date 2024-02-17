@@ -951,7 +951,13 @@ button {
     transform: translateX(-50%);
     justify-content: center;
   }
+  .vm-banner .slick-dots li {
+    width: 15px;
+    height: 15px;
+  }
   .vm-banner .slick-dots li button::before {
+    width: 10px;
+    height: 10px;
     transform: translate(-50%, -50%);
   }
   .vm-banner__app {
