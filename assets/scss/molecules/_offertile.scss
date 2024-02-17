@@ -1,0 +1,37 @@
+.vm-tile{
+    margin: 0 8px;
+    border-radius: 65px;
+    border-bottom-left-radius: 0;
+    overflow: hidden;
+    &:hover{
+        .vm-tile__cnt{
+            bottom: 0%;
+            transition: 0.3s;
+        }
+    }
+    &__outer{
+        min-height: 450px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+    &__cnt{
+        background-color: var(--clr-green-2);
+        position: absolute;
+        width: 100%;
+        height: auto;
+        bottom: -21%;
+        color: var(--clr-white);
+        padding: 24px;
+        transition: 0.3s;
+        p{
+            margin-bottom: 16px;
+        }
+    }
+    &__head{
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 16px;
+    }
+}

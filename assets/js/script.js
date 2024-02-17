@@ -1,16 +1,22 @@
 
 // input menu
-const incrementButton = document.querySelector("#increment");
-const decrementButton = document.querySelector("#decrement");
-const quantityInput = document.querySelector("#quantity");
+const incrementButton = document.querySelectorAll(".increment");
+const decrementButton = document.querySelectorAll(".decrement");
+const quantityInput = document.querySelectorAll(".quantity");
 
 if(quantityInput){
-  incrementButton.addEventListener("click", () => {
-    quantityInput.value = parseInt(quantityInput.value) + 1;
-  });
-  decrementButton.addEventListener("click", () => {
-    quantityInput.value = parseInt(quantityInput.value) - 1;
-  });
+  incrementButton.forEach((e,index)=>{
+    e.addEventListener("click", () => {
+      console.log(quantityInput[index]);
+      quantityInput[index].value = parseInt(quantityInput[index].value) + 1;
+    });
+  })
+  decrementButton.forEach((e,index)=>{
+    e.addEventListener("click", () => {
+      console.log(quantityInput[index]);
+      quantityInput[index].value = parseInt(quantityInput[index].value) - 1;
+    });
+  })
 }
 
 // banner

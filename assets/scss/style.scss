@@ -12,10 +12,13 @@
 @import "./atoms/heading";      
 
 // molecule
-@import "./molecules/_modal";
+@import "./molecules/modal";
+@import "./molecules/offertile";
 
 // organisms
 @import "./organisms/header";
 @import "./organisms/herosec";
 @import "./organisms/great-taste";
+@import "./organisms/offer";
+@import "./organisms/sales";
 // pages

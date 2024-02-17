@@ -1,0 +1,96 @@
+.vm-sales{
+    display: flex;
+    align-items: center     ;
+    &__tile{
+        width: 50%;
+        padding: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        background: rgb(224,223,227);
+        background: linear-gradient(140deg, rgba(224,223,227,1) 0%, rgba(251,251,253,1) 80%);
+        min-height: 400px;
+        &--inv{
+            background: rgb(80,239,154);
+            background: linear-gradient(140deg, rgba(80,239,154,1) 0%, rgba(130,246,185,1) 50%, rgba(208,255,230,1) 100%);
+            .vm-sales__img{
+                width: 30%;
+                top: 20%;
+                right: -10%;
+            }
+        }
+    }
+    &__cnt{
+        width: 80%;
+        h3{
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 24px;
+        }
+        p{
+            margin-bottom: 24px;
+            font-size: 20px;
+        }
+    }
+    &__img{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 20%;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+@include tablet{
+    .vm-sales{
+        flex-direction: column;
+        &__tile{
+            width: 100%;
+            flex-direction: column;
+        }
+        &__cnt{
+            h3{
+                font-size: 36px;
+            }
+            p{
+                font-size: 18px;
+            }
+        }
+    }
+}
+@include mobile{
+    .vm-sales{
+        flex-direction: column;
+        &__tile{
+            width: 100%;
+            flex-direction: column;
+            padding: 40px;
+            &--inv{
+                .vm-sales__img{
+                    width: 35%;
+                    top: unset;
+                    bottom: 0;
+                }
+            }
+        }
+        &__cnt{
+            h3{
+                font-size: 26px;
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+        &__img{
+            width: 40%;
+            img{
+                display: block;
+            }
+        }
+    }
+}

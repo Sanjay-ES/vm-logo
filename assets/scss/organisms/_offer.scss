@@ -1,0 +1,97 @@
+.vm-offer{
+    padding: 40px 0;
+    .vm-heading{
+        text-align: center;
+    }
+    .vm-heading--sub{
+        text-align: center;
+    }
+    &__head{
+        padding-bottom: 4px;
+        margin: 0 auto 32px;
+        width: 55%;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -0px;
+            width: 60px;
+            height: 8px;
+            background-color: var(--clr-green);
+            border-radius: 50px;
+        }
+    }
+    &__tileout{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 32px -16px 0;
+        .vm-tile{
+            width: calc(33.3% - 32px);
+            margin: 16px;
+        }
+    }
+}
+
+@include tablet{
+    .vm-offer{
+        padding: 40px 0;
+        .vm-heading{
+            text-align: center;
+        }
+        .vm-heading--sub{
+            font-size: 18px;
+        }
+        &__head{
+            width: 100%;
+        }
+        &__tileout{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 32px -16px 0;
+            .vm-tile{
+                width: calc(50% - 32px);
+                margin: 16px;
+            }
+            .vm-tile__head{
+                font-size: 22px;
+            }
+            .vm-tile__cnt{
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+
+@include mobile{
+    .vm-offer{
+        padding: 40px 0;
+        .vm-heading{
+            text-align: center;
+        }
+        .vm-heading--sub{
+            font-size: 18px;
+        }
+        &__head{
+            width: 100%;
+            margin-bottom: 0;
+        }
+        &__tileout{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 16px -16px 0;
+            .vm-tile{
+                width: calc(100% - 32px);
+                margin: 16px;
+            }
+            .vm-tile__head{
+                font-size: 22px;
+            }
+            .vm-tile__cnt{
+                font-size: 15px;
+            }
+        }
+    }
+}
